@@ -1,0 +1,5 @@
+binder_call(dumpstate, mosey_server)
+
+allow dumpstate mosey_service:service_manager find;
+
+dontaudit dumpstate sconed:binder call;

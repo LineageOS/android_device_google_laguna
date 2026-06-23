@@ -1,0 +1,8 @@
+app_domain(oemrilservice_app)
+
+allow oemrilservice_app activity_service:service_manager find;
+allow oemrilservice_app content_capture_service:service_manager find;
+allow oemrilservice_app netstats_service:service_manager find;
+allow oemrilservice_app radio_service:service_manager find;
+allow oemrilservice_app registry_service:service_manager find;
+allow oemrilservice_app telecom_service:service_manager find;

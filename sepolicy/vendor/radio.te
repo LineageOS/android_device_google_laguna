@@ -12,4 +12,3 @@ allow radio hal_vendor_radio_external_service:service_manager find;
 allow radio radio_vendor_data_file:dir rw_dir_perms;
 allow radio radio_vendor_data_file:file create_file_perms;
 allow radio scheduling_policy_service:service_manager find;
-allow radio vendor_ims_app:udp_socket { getattr read setopt shutdown write };

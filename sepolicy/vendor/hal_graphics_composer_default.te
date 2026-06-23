@@ -1,5 +1,4 @@
 type persist_display_file, file_type, vendor_persist_type;
-type vendor_hwc_log_file, data_file_type, file_type;
 
 hal_client_domain(hal_graphics_composer_default, hal_ambience_hub)
 hal_client_domain(hal_graphics_composer_default, hal_graphics_allocator)
@@ -13,6 +12,7 @@ binder_call(hal_graphics_composer_default, hal_power_default)
 binder_call(hal_graphics_composer_default, hal_power_stats_default)
 binder_call(hal_graphics_composer_default, hal_thermal_default)
 binder_call(hal_graphics_composer_default, pixeldisplayservice_app)
+binder_call(hal_graphics_composer_default, system_server)
 
 get_prop(hal_graphics_composer_default, boot_status_prop)
 
@@ -22,6 +22,7 @@ vndbinder_use(hal_graphics_composer_default)
 
 allow hal_graphics_composer_default dump_pixel_display:fd use;
 allow hal_graphics_composer_default dump_pixel_display:fifo_file { append write };
+allow hal_graphics_composer_default fwk_stats_service:service_manager find;
 allow hal_graphics_composer_default hal_ambience_hub_service:service_manager find;
 allow hal_graphics_composer_default hal_graphics_allocator_default:binder call;
 allow hal_graphics_composer_default hal_power_stats_vendor_service:service_manager find;

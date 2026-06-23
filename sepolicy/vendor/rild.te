@@ -25,6 +25,7 @@ get_prop(rild, vendor_audio_prop)
 get_prop(rild, vendor_carrier_prop)
 get_prop(rild, vendor_persist_config_default_prop)
 
+set_prop(rild, system_ril_ext_prop)
 set_prop(rild, telephony_ril_prop)
 set_prop(rild, vendor_imssvc_prop)
 set_prop(rild, vendor_modem_prop)

@@ -4,5 +4,6 @@ app_domain(vendor_rcs_service_app)
 
 allow vendor_rcs_service_app activity_service:service_manager find;
 allow vendor_rcs_service_app content_capture_service:service_manager find;
+allow vendor_rcs_service_app gpu_service:service_manager find;
 allow vendor_rcs_service_app netstats_service:service_manager find;
 allow vendor_rcs_service_app radio_service:service_manager find;

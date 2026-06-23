@@ -1,9 +1,11 @@
 hal_client_domain(grilservice_app, hal_power_stats)
 
 binder_call(grilservice_app, hal_aidl_radio_ext)
+binder_call(grilservice_app, hal_audio_default)
 binder_call(grilservice_app, hal_bluetooth_btlinux)
 binder_call(grilservice_app, hal_wifi_ext)
 binder_call(grilservice_app, rild)
+binder_call(grilservice_app, sconed)
 binder_call(grilservice_app, twoshay)
 
 r_dir_file(grilservice_app, sysfs_irq)
@@ -15,7 +17,9 @@ allow grilservice_app activity_service:service_manager find;
 allow grilservice_app connectivity_service:service_manager find;
 allow grilservice_app content_capture_service:service_manager find;
 allow grilservice_app display_service:service_manager find;
+allow grilservice_app gpu_service:service_manager find;
 allow grilservice_app gril_antenna_tuning_service:service_manager find;
+allow grilservice_app hal_audio_ext_service:service_manager find;
 allow grilservice_app hal_audiometricext_hwservice:hwservice_manager find;
 allow grilservice_app hal_bluetooth_coexistence_hwservice:hwservice_manager find;
 allow grilservice_app hal_bluetooth_coexistence_service:service_manager find;
@@ -25,4 +29,5 @@ allow grilservice_app hal_wifi_ext_hwservice:hwservice_manager find;
 allow grilservice_app hal_wifi_ext_service:service_manager find;
 allow grilservice_app netstats_service:service_manager find;
 allow grilservice_app network_management_service:service_manager find;
+allow grilservice_app scone_aidl_service:service_manager find;
 allow grilservice_app wifi_service:service_manager find;

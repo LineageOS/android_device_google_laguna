@@ -13,8 +13,11 @@ init_daemon_domain(pixelstats_vendor)
 r_dir_file(pixelstats_vendor, proc_vendor_mm)
 r_dir_file(pixelstats_vendor, sysfs_batteryinfo)
 r_dir_file(pixelstats_vendor, sysfs_display)
+r_dir_file(pixelstats_vendor, sysfs_iommu_telemetry)
 r_dir_file(pixelstats_vendor, sysfs_vendor_metrics)
 r_dir_file(pixelstats_vendor, sysfs_vendor_mm)
+
+set_prop(pixelstats_vendor, vendor_devcoredump_prop)
 
 unix_socket_connect(pixelstats_vendor, chre, hal_contexthub_default)
 
@@ -39,14 +42,13 @@ allow pixelstats_vendor sscoredump_vendor_data_crashinfo_file:file r_file_perms;
 allow pixelstats_vendor sysfs_batteryinfo:file w_file_perms;
 allow pixelstats_vendor sysfs_bcl:dir search;
 allow pixelstats_vendor sysfs_bcl:file r_file_perms;
+allow pixelstats_vendor sysfs_devfreq_cur:file r_file_perms;
 allow pixelstats_vendor sysfs_dm:dir search;
 allow pixelstats_vendor sysfs_dm:file { getattr open read };
 allow pixelstats_vendor sysfs_dma_heap:dir search;
 allow pixelstats_vendor sysfs_dma_heap:file r_file_perms;
 allow pixelstats_vendor sysfs_fs_f2fs:dir search;
 allow pixelstats_vendor sysfs_fs_f2fs:file rw_file_perms;
-allow pixelstats_vendor sysfs_ion:dir search;
-allow pixelstats_vendor sysfs_ion:file r_file_perms;
 allow pixelstats_vendor sysfs_pixel_stat:dir r_dir_perms;
 allow pixelstats_vendor sysfs_pixel_stat:file r_file_perms;
 allow pixelstats_vendor sysfs_pixelstats:file r_file_perms;

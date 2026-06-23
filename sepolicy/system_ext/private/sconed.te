@@ -1,0 +1,19 @@
+type sconed_exec, exec_type, file_type, system_file_type;
+
+typeattribute sconed coredomain;
+
+add_service(sconed, scone_aidl_service)
+
+binder_use(sconed)
+
+domain_auto_trans(sconed, netutils_wrapper_exec, netutils_wrapper)
+
+init_daemon_domain(sconed)
+
+allow sconed self:netlink_tcpdiag_socket create_socket_perms_no_ioctl;
+allow sconed self:netlink_tcpdiag_socket nlmsg_read;
+
+allowxperm sconed self:netlink_tcpdiag_socket nlmsg RTM_GETLINK;
+
+dontaudit sconed dumpstate:fd use;
+dontaudit sconed self:capability net_admin;

@@ -1,5 +1,3 @@
-type sysfs_gcdd_dev_stat, fs_type, sysfs_type;
-
 binder_call(hal_health_default, hal_wlcservice)
 binder_call(hal_health_default, stats_service_server)
 
@@ -14,5 +12,6 @@ allow hal_health_default persist_battery_file:file create_file_perms;
 allow hal_health_default persist_file:dir search;
 allow hal_health_default sysfs_batteryinfo:file write;
 allow hal_health_default sysfs_gcdd_dev_stat:file rw_file_perms;
+allow hal_health_default sysfs_typec:dir { open read search };
 allow hal_health_default sysfs_wlc:dir search;
 allow hal_health_default sysfs_wlc:file rw_file_perms;

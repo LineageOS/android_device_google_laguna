@@ -2,12 +2,15 @@ type touch_offload_device, dev_type;
 type twoshay, domain;
 type twoshay_exec, exec_type, file_type, vendor_file_type;
 
+hal_client_domain(twoshay, hal_ambience_hub)
+
 add_service(twoshay, gril_antenna_tuning_service)
 add_service(twoshay, screen_protector_detector_service)
 add_service(twoshay, touch_context_service)
 add_service(twoshay, twoshay_file_dump_service)
 add_service(twoshay, twoshay_notification_service)
 
+binder_call(twoshay, ambience_hub_default)
 binder_call(twoshay, grilservice_app)
 binder_call(twoshay, hal_aidl_radio_ext)
 binder_call(twoshay, platform_app)

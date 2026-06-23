@@ -9,6 +9,7 @@ set_prop(pixelntnservice_app, telephony_ntn_demo_mode_prop)
 
 allow pixelntnservice_app activity_service:service_manager find;
 allow pixelntnservice_app content_capture_service:service_manager find;
+allow pixelntnservice_app gpu_service:service_manager find;
 allow pixelntnservice_app legacy_permission_service:service_manager find;
 allow pixelntnservice_app netstats_service:service_manager find;
 allow pixelntnservice_app radio_service:service_manager find;

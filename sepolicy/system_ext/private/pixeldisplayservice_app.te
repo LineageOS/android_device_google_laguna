@@ -2,14 +2,21 @@ app_domain(pixeldisplayservice_app)
 
 typeattribute pixeldisplayservice_app coredomain;
 
+binder_use(pixeldisplayservice_app)
+
 allow pixeldisplayservice_app accessibility_service:service_manager find;
 allow pixeldisplayservice_app activity_service:service_manager find;
 allow pixeldisplayservice_app activity_task_service:service_manager find;
+allow pixeldisplayservice_app audio_service:service_manager find;
 allow pixeldisplayservice_app cameraserver_service:service_manager find;
+allow pixeldisplayservice_app color_display_service:service_manager find;
 allow pixeldisplayservice_app connectivity_service:service_manager find;
 allow pixeldisplayservice_app content_capture_service:service_manager find;
 allow pixeldisplayservice_app content_service:service_manager find;
+allow pixeldisplayservice_app device_state_service:service_manager find;
 allow pixeldisplayservice_app display_service:service_manager find;
+allow pixeldisplayservice_app fwk_stats_service:service_manager find;
+allow pixeldisplayservice_app gpu_service:service_manager find;
 allow pixeldisplayservice_app graphicsstats_service:service_manager find;
 allow pixeldisplayservice_app hint_service:service_manager find;
 allow pixeldisplayservice_app input_method_service:service_manager find;

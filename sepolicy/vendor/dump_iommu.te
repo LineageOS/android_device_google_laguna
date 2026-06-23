@@ -1,0 +1,6 @@
+pixel_bugreport(dump_iommu)
+
+allow dump_iommu radio_vendor_data_file:dir create_dir_perms;
+allow dump_iommu radio_vendor_data_file:file create_file_perms;
+allow dump_iommu sysfs_iommu_telemetry:dir r_dir_perms;
+allow dump_iommu sysfs_iommu_telemetry:file r_file_perms;

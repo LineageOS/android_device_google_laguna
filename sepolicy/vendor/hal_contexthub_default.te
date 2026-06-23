@@ -1,8 +1,9 @@
 type chre_data_file, data_file_type, file_type;
 
+hal_client_domain(hal_contexthub_default, hal_bluetooth_lpp)
 hal_client_domain(hal_contexthub_default, hal_graphics_allocator)
 
-hal_server_domain(hal_contexthub_default, hal_bluetooth)
+hal_server_domain(hal_contexthub_default, hal_bluetooth_lpp)
 
 binder_call(hal_contexthub_default, hal_gnss_pixel)
 binder_call(hal_contexthub_default, hal_sensors_default)

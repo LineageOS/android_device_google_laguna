@@ -21,4 +21,5 @@ allow hal_usb_impl self:capability2 wake_alarm;
 allow hal_usb_impl self:netlink_kobject_uevent_socket { bind create getopt read setopt };
 allow hal_usb_impl sysfs_batteryinfo:dir r_dir_perms;
 allow hal_usb_impl sysfs_batteryinfo:file rw_file_perms;
+allow hal_usb_impl sysfs_gcdd_dev_stat:file rw_file_perms;
 allow hal_usb_impl sysfs_udc:file r_file_perms;

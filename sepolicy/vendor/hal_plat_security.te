@@ -3,6 +3,7 @@ type hal_plat_security_exec, exec_type, file_type, vendor_file_type;
 type hal_plat_security_service, hal_service_type, protected_service, service_manager_type;
 
 add_service(hal_plat_security, hal_plat_security_service)
+add_service(hal_plat_security, hal_timestamp_service)
 
 binder_call(hal_plat_security, servicemanager)
 

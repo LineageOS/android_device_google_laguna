@@ -1,1 +1,1 @@
-type mosey_app, domain;
+type mosey_app, coredomain, domain;
