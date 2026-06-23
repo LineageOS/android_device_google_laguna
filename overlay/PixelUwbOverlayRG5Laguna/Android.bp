@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "PixelUwbOverlayRG5",
+    name: "PixelUwbOverlayRG5Laguna",
     product_specific: true,
 }

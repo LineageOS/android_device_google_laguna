@@ -10,7 +10,7 @@
     <bool name="enable_secure_nfc_support">true</bool>
 
     <!-- Block list that contains the package names which are not desired to get tag intents -->
-    <string-array name="tag_intent_blocked_app_list">
+    <string-array name="tag_intent_blocked_app_list" translatable="false">
         <item>com.google.android.tag</item>
     </string-array>
 </resources>

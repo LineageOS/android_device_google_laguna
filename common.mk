@@ -389,7 +389,6 @@ PRODUCT_PACKAGES += \
     SystemUIGoogleOverlayVendorLaguna \
     TeleServiceOverlayProductLaguna \
     TeleServiceOverlayVendorLaguna \
-    TelecomOverlayProductLaguna \
     TelephonyProviderOverlayProductLaguna \
     TerminalOverlay
 
