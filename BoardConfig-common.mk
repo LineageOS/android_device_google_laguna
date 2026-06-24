@@ -59,9 +59,6 @@ TARGET_RECOVERY_FSTAB_GENRULE := gen_fstab.laguna-sw-encrypt
 
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 165
-TARGET_RECOVERY_UI_LIB := \
-	//hardware/google/pixel/recovery:librecovery_ui_pixel \
-	libfstab
 
 AB_OTA_UPDATER := true
 
