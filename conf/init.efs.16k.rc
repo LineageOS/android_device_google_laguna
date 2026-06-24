@@ -1,6 +1,6 @@
 # This RC file is used for:
-#    - 16kb Developer option which can boot with 4kb/16kb page size.
-#    - 16kb targets only
+#    - 16kb developer option which can boot with 4kb/16kb page size.
+#    - 16kb targets which boot with 16kb kernels directly
 
 service copy_efs_files_to_data /vendor/bin/copy_efs_files_to_data
     user root
