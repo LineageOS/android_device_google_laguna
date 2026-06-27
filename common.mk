@@ -378,10 +378,6 @@ PRODUCT_PACKAGES += \
     SettingsOverlayLaguna \
     SimpleDeviceConfigOverlayLaguna
 
-# Parts
-PRODUCT_PACKAGES += \
-    GoogleParts
-
 # Properties
 TARGET_PRODUCT_PROP += device/google/laguna/product.prop
 TARGET_SYSTEM_EXT_PROP += device/google/laguna/system_ext.prop
