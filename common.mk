@@ -345,6 +345,7 @@ PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay \
     FrameworkResOverlayProductLaguna \
     FrameworkResOverlayVendorLaguna \
+    GazeOverlay \
     GlanceableHubConfigOverlay \
     GlanceableHubSettingsConfigOverlay \
     GlanceableHubSettingsConfigOverlay2022 \
