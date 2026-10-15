@@ -6,7 +6,6 @@ typeattribute vendor_ims_app coredomain;
 
 set_prop(vendor_ims_app, radio_prop)
 
-allow radio vendor_ims_app:udp_socket { getattr read setopt shutdown write };
 allow vendor_ims_app activity_service:service_manager find;
 allow vendor_ims_app activity_task_service:service_manager find;
 allow vendor_ims_app appops_service:service_manager find;
